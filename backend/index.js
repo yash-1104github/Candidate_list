@@ -5,7 +5,7 @@ const app = express();
 
 app.use(cors(
     {
-        origin: ["https://candidate-list-7slzrv23y-yash-1104githubs-projects.vercel.app"],
+        origin: ["https://candidate-list-frontend-rbs75nxe9-yash-1104githubs-projects.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true
     }
