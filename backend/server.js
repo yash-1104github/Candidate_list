@@ -1,11 +1,20 @@
 import express from "express";
-
+import cors from "cors";
 
 const app = express();
+
+app.use(cors(
+    {
+        origin: ["https://candidate-list-7slzrv23y-yash-1104githubs-projects.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 
 app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
+
 
 
 app.get("/api/candidates", (req, res) => {

@@ -8,8 +8,8 @@
     ],
     "routes": [
         {
-            "src": "/api/candidates(.*)",
-            "dest": "/api/candidates$1"
+            "src": "/(.*)",
+            "dest": "/"
         }
     ]
 }
