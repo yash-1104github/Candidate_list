@@ -14,7 +14,7 @@ const Candidates = () => {
 
     useEffect(() => {
         setLoading(true);
-        axios.get("/api/candidates")
+        axios.get("https://candidate-list-inky.vercel.app/api/candidates")
             .then((response) => {   
                 console.log(response.data);
                 setCandidates(response.data);
