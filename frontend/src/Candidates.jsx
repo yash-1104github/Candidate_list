@@ -9,7 +9,9 @@ const Candidates = () => {
     const [loading, setLoading] = useState(true);
     const [searchQuery, setSearchQuery] = useState('');
     const [filteredCandidates, setFilteredCandidates] = useState([]);
-  
+   
+    axios.defaults.withCredentials = true;
+
     useEffect(() => {
         setLoading(true);
         axios.get("/api/candidates")
